@@ -1,0 +1,1 @@
+body{display:flex;align-items:center;justify-content:center;height:100vh}body div{width:70vw;transform:translateY(-10vh)}body div img{width:100%;filter:drop-shadow(0.5rem 0.5rem 0 #4D0027);transition:all .2s ease-in-out}body div img:hover{filter:drop-shadow(1rem 1rem 0 #4D0027);transition:all .2s ease-in-out}
