@@ -1,19 +1,131 @@
-body {
+:root {
+    --donutpink: #FF0081;
+    --donutshadow: #4D0027;
+    --background1: #d6fffb;
+    --background2: #deffba;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+
+*:-webkit-scrollbar {
+    display: none;
+}
+
+a,
+p,
+h1,
+h2,
+h3 {
+    color: black;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hide,
+.hide-when-mobile {
+    display: none;
+}
+
+.hide-when-desktop {
+    display: block;
+}
+
+header {
+    background-color: var(--background1);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    div {
-        width: 70vw;
-        transform: translateY(-10vh);
-        img {
-            width: 100%;
-            filter: drop-shadow(0.5rem 0.5rem 0 #4D0027);
-            transition: all 0.2s ease-in-out;
+    padding: 1rem;
+
+    span {
+        align-self: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    @keyframes logotext {
+        0% {
+            transform: rotate(-10deg);
         }
-        img:hover {
-            filter: drop-shadow(1rem 1rem 0 #4D0027);
-            transition: all 0.2s ease-in-out;
+
+        50% {
+            transform: rotate(-3deg);
+        }
+
+        100% {
+            transform: rotate(-10deg);
+        }
+    }
+
+    #logoText {
+        width: 70vw;
+        filter: drop-shadow(0.3rem 0.3rem 0 var(--donutshadow));
+        transition: all 0.2s ease-in-out;
+        align-self: flex-start;
+        margin-bottom: 2rem;
+        animation-name: logotext;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    #logoText:hover {
+        filter: drop-shadow(0.5rem 0.5rem 0 var(--donutshadow));
+        transition: filter 0.2s ease-in-out;
+    }
+
+    #logoImg {
+        width: 60vw;
+        align-self: flex-end;
+    }
+
+}
+
+#description {
+    background-color: var(--background2);
+    padding: 3rem;
+}
+
+#games {
+    background-color: var(--background1);
+    .game {
+        height: 40rem;
+        svg {
+            max-width: 50rem;
+            position: absolute;
+            padding: 3rem;
+            fill: var(--background2);
+        }
+        .game-description {
+            max-width: 50rem;
+            position: absolute;
+            padding: 5rem;
+            display: flex;
+            flex-direction: column;
+            img {
+                position: relative;
+                align-self: center;
+                width: 10rem;
+                border-radius: 2rem;
+                margin-bottom: 1rem;
+            }
         }
     }
 }
