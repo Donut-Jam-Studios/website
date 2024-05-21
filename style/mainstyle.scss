@@ -98,13 +98,28 @@ header {
 
 }
 
+#headerBlob {
+    z-index: 10;
+    position: absolute;
+    fill: var(--background1);
+    transform: translateY(-1px);
+}
+
 #description {
     background-color: var(--background2);
-    padding: 3rem;
+    padding: 5rem 3rem 1rem 3rem;
+}
+
+#desBlob {
+    z-index: 10;
+    position: absolute;
+    fill: var(--background2);
+    transform: translateY(-1px);
 }
 
 #games {
     background-color: var(--background1);
+    padding-top: 5rem;
     .game {
         height: 40rem;
         svg {
