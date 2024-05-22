@@ -11,30 +11,32 @@
 
 <body>
     <header class="block">
-        <span>
-            <p>Welcome to</p>
-        </span>
-        <img id="logoText" src="media/svg/text-logo.svg" alt="">
-        <img id="logoImg" src="media/svg/donut-logo.svg" alt="">
-
+        <div class="content" id="logoSection">
+            <span>
+                <p>Welcome to</p>
+            </span>
+            <img id="logoText" src="media/svg/text-logo.svg" alt="">
+            <img id="logoImg" src="media/svg/donut-logo.svg" alt="">
+        </div>
     </header>
-    <div>
+    <div class="blob-inbetween">
         <svg id="headerBlob" viewBox="0 0 100 20">
             <ellipse cx="50" cy="0" rx="100" ry="10" />
         </svg>
     </div>
 
     <section id="description" class="block">
-        <h1>Who are we?</h1>
-        <p>Irure duis voluptate deserunt aliqua occaecat et cillum. Non Lorem elit laborum sint sunt nostrud excepteur
-            ipsum. Incididunt ea cupidatat deserunt mollit commodo officia excepteur nisi adipisicing id magna dolore
-            laboris.</p>
-        <p>Irure duis voluptate deserunt aliqua occaecat et cillum. Non Lorem elit laborum sint sunt nostrud excepteur
-            ipsum. Incididunt ea cupidatat deserunt mollit commodo officia excepteur nisi adipisicing id magna dolore
-            laboris.</p>
-
+        <div class="content" id="descSection">
+            <h1>Who are we?</h1>
+            <p>Irure duis voluptate deserunt aliqua occaecat et cillum. Non Lorem elit laborum sint sunt nostrud excepteur
+                ipsum. Incididunt ea cupidatat deserunt mollit commodo officia excepteur nisi adipisicing id magna dolore
+                laboris.</p>
+            <p>Irure duis voluptate deserunt aliqua occaecat et cillum. Non Lorem elit laborum sint sunt nostrud excepteur
+                ipsum. Incididunt ea cupidatat deserunt mollit commodo officia excepteur nisi adipisicing id magna dolore
+                laboris.</p>
+        </div>
     </section>
-    <div id="afterDescription">
+    <div class="blob-inbetween" id="afterDescription">
         <svg id="desBlob" viewBox="0 0 100 20">
             <ellipse cx="50" cy="0" rx="100" ry="10" />
         </svg>
@@ -42,20 +44,21 @@
     
 
     <section id="games" class="block">
+        <div class="content" id="gamesSection">
         <article class="game">
-            <svg id="an" viewBox="0 0 200 200">
-                <ellipse cx="100" cy="100" rx="100" ry="100" />
-            </svg>
-
-            <div class="game-description">
-                <img id="janitorImg" class="game-image" src="media/img/janitor.png" alt="">
+            <picture class="game-image" loading="lazy">
+                <source srcset="media/img/placeholder.avif" type="image/avif">
+                <source srcset="media/img/placeholder.webp" type=" image/webp">
+                <img src="media/img/placeholder.jpg"
+                    alt="placeholder image">
+            </picture>
 
                 <p>Occaecat sit laborum ex dolore commodo consequat et in elit sunt labore officia. Pariatur id eiusmod
                     occaecat dolor occaecat aute laboris id enim reprehenderit id nulla qui. Nisi in nulla eiusmod sunt
                     nisi dolor exercitation.</p>
-            </div>
 
         </article>
+    </div>
     </section>
 
     <script src="script/warp.js"></script>
