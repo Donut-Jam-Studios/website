@@ -1,9 +1,9 @@
 @font-face {
     font-family: Quicksand;
-    src: url("../media/fonts/Quicksand-VariableFont_wght.ttf");
+    src: url("../media/fonts/Quicksand-VariableFont_wght.woff");
 }
 
 @font-face {
-    font-family: Fredoka;
-    src: url("../media/fonts/Fredoka-VariableFont_wdth_wght.ttf");
+    font-family: BagelFatOne;
+    src: url("../media/fonts/BagelFatOne-Regular.woff2");
 }
