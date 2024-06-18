@@ -1,9 +1,19 @@
-@font-face {
+/* @font-face {
     font-family: Quicksand;
     src: url("../media/fonts/Quicksand-VariableFont_wght.woff");
-}
+} */
 
 @font-face {
     font-family: BagelFatOne;
     src: url("../media/fonts/BagelFatOne-Regular.woff2");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../media/fonts/Raleway-VF.woff2");
+}
+@font-face {
+    font-family: RalewayItalic;
+    src: url("../media/fonts/Raleway-Italic-VF.woff2");
+    font-style: italic, oblique;
 }

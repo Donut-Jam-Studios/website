@@ -1,8 +1,9 @@
 :root {
     --donutpink: #FF0081;
     --donutshadow: #4D0027;
-    --background1: #d6fffb;
-    --background2: #deffba;
+    --glaze: #FFD1E8;
+    --doughfill: #D99C5F;
+    --doughstroke: #4D3722;
 }
 
 * {
@@ -25,19 +26,21 @@ h3 {
 }
 
 h1 {
-    font-weight: 500;
-    font-size: 2rem;
+    font-family: 'RalewayItalic', sans-serif;
+    color: var(--donutshadow);
+    font-weight: 600;
     font-style: italic;
+    font-size: 2rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
-    font-family: 'Quicksand', sans-serif;
 }
 
 p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
     font-weight: 300;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .hide,
@@ -57,99 +60,57 @@ p {
 
 
 header {
-    background-color: var(--background1);
+    .content {
 
     #logoSection {
 
 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        padding: 1rem;
-
-        span {
-            align-self: flex-start;
-            margin-bottom: 2rem;
-        }
-
-        @keyframes logotext {
-            0% {
-                transform: rotate(-10deg);
-            }
-
-            50% {
-                transform: rotate(-3deg);
-            }
-
-            100% {
-                transform: rotate(-10deg);
-            }
-        }
+        align-items: center;
+        margin: 4rem 0 2rem 0;
 
         #logoText {
-            width: 70vw;
-            filter: drop-shadow(0.3rem 0.3rem 0 var(--donutshadow));
+            width: 60%;
+            filter: drop-shadow(0.3em 0.1em 0 var(--donutshadow));
             transition: all 0.2s ease-in-out;
-            align-self: flex-start;
+            padding: 1rem;
             margin-bottom: 2rem;
-            animation-name: logotext;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-
-        #logoText:hover {
-            filter: drop-shadow(0.5rem 0.5rem 0 var(--donutshadow));
-            transition: filter 0.2s ease-in-out;
         }
 
         #logoImg {
-            width: 60vw;
+            width: 40%;
             align-self: flex-end;
         }
     }
+            
+}
 }
 
-#headerBlob {
-    z-index: 10;
-    position: absolute;
-    fill: var(--background1);
-    transform: translateY(-1px);
+.block {
+ padding: 3rem 2rem;
 }
 
 #description {
-    background-color: var(--background2);
-
-    #descSection {
-        padding: 5rem 3rem 1rem 3rem;
-    }
-
+    background-color: var(--glaze);
 }
 
-#desBlob {
-    z-index: 10;
-    position: absolute;
-    fill: var(--background2);
-    transform: translateY(-1px);
-}
+@media screen and (min-width: 60rem) {
+    header {
 
-#games {
-    background-color: var(--background1);
+        #logoSection {
+    
+            #logoText {
+                filter: drop-shadow(0.4em 0.12em 0 var(--donutshadow));
 
-    #gamesSection {
-        padding-top: 5rem;
-
-        .game {
-            height: 40rem;
-            .game-description {
-                max-width: 50rem;
-                position: absolute;
-                padding: 5rem;
-                display: flex;
-                flex-direction: column;
-
-               
+            }
+    
+            #logoText:hover {
+                filter: drop-shadow(0.5em 0.17em 0 var(--donutshadow));
+                transition: filter 0.2s ease-in-out;
             }
         }
-    }
+    } 
 }
+
