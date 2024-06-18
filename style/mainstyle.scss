@@ -61,6 +61,7 @@ p {
 
 header {
     .content {
+        padding: 2rem;
 
     #logoSection {
 
@@ -92,7 +93,7 @@ header {
  padding: 3rem 2rem;
 }
 
-#description {
+.block:nth-of-type(odd) {
     background-color: var(--glaze);
 }
 
