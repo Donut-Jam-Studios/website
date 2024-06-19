@@ -105,6 +105,37 @@ header {
     }
 }
 
+#games {
+    .game {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        .game-img-box {
+            width: 100%;
+            height: 50vw;
+            position: relative;
+            margin-bottom: 1rem;
+            .game-image {
+                position: absolute;
+            top: 0;
+            object-fit: scale-down;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 3rem;
+            border: var(--donutshadow) 1rem solid;
+            box-sizing: border-box;
+            }
+        }
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
 #portraitsSection {
     #portraits {
         display: flex;
@@ -164,6 +195,25 @@ header {
             }
         }
     } 
+
+    #games {
+        .game {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .game-img-box {
+                width: 40%;
+                height: 20rem;
+            }
+            .game-desc {
+                width: 50%;
+            }
+        }
+        .game:nth-of-type(2n) {
+            flex-direction: row-reverse;
+        }
+    }
+
     #portraitsSection {
         #portraits {
         .team-member {
