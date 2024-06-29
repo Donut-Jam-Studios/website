@@ -24,3 +24,4 @@ In no specific order.
 |---|---|---|
 |  stoolwitch | Game design, UI & Level design, Graphic design, Web design, Occasionally art  | [portfolio](https://nyxviolet.com)  |
 |  VDYO | Project Lead, Game Design, Programming, Music  |  [github](https://github.com/lacpe) |
+|  Onabszy | Artist, Animator  |  [portfolio](https://onabszy.com) |
