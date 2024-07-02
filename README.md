@@ -27,3 +27,4 @@ In no specific order.
 |  Onabszy | Artist, Animator  |  [portfolio](https://onabszy.com) |
 |  ajgae | Game Design, Music, Dev  |  none for now |
 |  Caroline Denham | Writer, Artist |  none for now |
+|  Gougou | Artist |  none for now |
