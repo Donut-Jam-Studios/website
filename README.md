@@ -15,16 +15,3 @@ i want it to be pop, colorful, bubbly, animated, pretty to look at and fun to sc
 ## how and important technicalities
 
 coding by hand, mobile first, accessibility and performance in mind
-
-## Team members to include
-
-In no specific order.
-
-| Name  |  Roles | Link  |
-|---|---|---|
-|  stoolwitch | Game design, UI & Level design, Graphic design, Web design, Occasionally art  | [portfolio](https://nyxviolet.com)  |
-|  VDYO | Game Design, Dev, Music  |  [github](https://github.com/lacpe) |
-|  Onabszy | Artist, Animator  |  [portfolio](https://onabszy.com) |
-|  ajgae | Game Design, Music, Dev  |  none for now |
-|  Caroline Denham | Writer, Artist |  none for now |
-|  Gougou | Artist |  none for now |
